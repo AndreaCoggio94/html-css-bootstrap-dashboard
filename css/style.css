@@ -26,10 +26,9 @@
   /* web site color palette */
 
   /* layout */
-  --small-nav-bar: 10vh;
-  --big-nav-bar: 12vh;
+  --nav-bar: 12vh;
   --small-side-bar: 80px;
-  --big-side-bar: 300px;
+  --big-side-bar: 150px;
 }
 
 /* ** general */
@@ -37,13 +36,13 @@
 /* * nav_bar */
 
 #nav_bar {
-  height: var(--big-nav-bar);
+  height: var(--nav-bar);
 }
 
 /* * main */
 
 #main {
-  height: calc(100vh - var(--big-nav-bar));
+  height: calc(100vh - var(--nav-bar));
 }
 
 /* side_bar */
@@ -64,7 +63,33 @@
 /* content */
 
 #content {
-  height: 100%;
+  /* height: 100%; */
+}
+
+/* ** breakpoint */
+
+@media screen and (min-width: 576px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 992px) {
+  /* * side_bar */
+  #side_bar {
+    width: var(--big-side-bar);
+  }
+  /* * main_content */
+  #main > .main_content {
+    width: calc(100% - var(--big-side-bar));
+    overflow-y: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+}
+
+@media screen and (min-width: 1400px) {
 }
 
 /* ** debug */
