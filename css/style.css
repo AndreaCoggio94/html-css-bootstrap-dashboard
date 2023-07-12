@@ -28,11 +28,20 @@
   --side-bar-secondary: #11283e;
   --header-primary: #1b72e8;
   --header-secondary: #2e6fc9;
+  --navbar-white: #e7e9ec;
 
   /* layout */
   --navbar: 12vh;
   --small-side-bar: 80px;
   --big-side-bar: 150px;
+}
+
+/* ** reset */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 /* ** general */
@@ -41,10 +50,15 @@
 
 #navbar {
   height: var(--navbar);
+  /* background-color: var(--navbar-white); */
 }
 
 #navbar .navbar_content {
   width: 100%;
+}
+
+#navbar .navbar-collapse {
+  flex-grow: 0;
 }
 
 #navbar .btn-custom-dropdown {
