@@ -24,6 +24,10 @@
   --light-purple: #9792e4;
 
   /* web site color palette */
+  --side-bar-primary: #051e34;
+  --side-bar-secondary: #11283e;
+  --header-primary: #1b72e8;
+  --header-secondary: #2e6fc9;
 
   /* layout */
   --nav-bar: 12vh;

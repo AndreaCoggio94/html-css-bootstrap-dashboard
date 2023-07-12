@@ -39,7 +39,42 @@
   </head>
   <body class="debug">
     <!-- nav bar -->
-    <nav id="nav_bar" class="bg-primary"></nav>
+    <nav id="nav_bar" class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <div class="d-flex">
+          <a class="navbar-brand d-lg-none" href="#">
+            <img src="./img/logo.svg" alt="Bootstrap" />
+          </a>
+          <a class="navbar-brand d-none d-lg-inline-block" href="#">
+            <img src="./img/logo.svg" alt="1" />
+          </a>
+          <form class="d-flex flex-growth" role="search">
+            <div class="input-group">
+              <button class="btn btn-outline-success" type="submit">
+                icon
+              </button>
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+            </div>
+          </form>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </nav>
     <!-- main -->
     <main id="main" class="d-flex">
       <!-- side bar -->
