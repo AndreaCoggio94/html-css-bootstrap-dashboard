@@ -24,6 +24,47 @@
   --light-purple: #9792e4;
 
   /* web site color palette */
+
+  /* layout */
+  --small-nav-bar: 10vh;
+  --big-nav-bar: 12vh;
+  --small-side-bar: 80px;
+  --big-side-bar: 300px;
+}
+
+/* ** general */
+
+/* * nav_bar */
+
+#nav_bar {
+  height: var(--big-nav-bar);
+}
+
+/* * main */
+
+#main {
+  height: calc(100vh - var(--big-nav-bar));
+}
+
+/* side_bar */
+
+#side_bar {
+  width: var(--small-side-bar);
+}
+
+/* * main_content */
+
+#main > .main_content {
+  width: calc(100% - var(--small-side-bar));
+  overflow-y: auto;
+}
+
+/* header */
+
+/* content */
+
+#content {
+  height: 100%;
 }
 
 /* ** debug */
