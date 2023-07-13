@@ -83,6 +83,10 @@
   right: 0;
 }
 
+#navbar .yellow_icon {
+  color: var(--yellow);
+}
+
 /* * main */
 
 #main {
@@ -98,6 +102,7 @@
   color: var(--white);
 }
 
+/* ! mi aggiunge il background nell'inspector ma non qui */
 #side_bar > .side_bar_background {
   background-image: url("./img/sidebar-bg.png");
 }
