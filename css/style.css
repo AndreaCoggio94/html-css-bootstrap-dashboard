@@ -93,12 +93,12 @@
 
 #side_bar {
   width: var(--small-side-bar);
-  background-image: url("./img/sidebar-bg.png");
+
   background-color: var(--side-bar-primary);
   color: var(--white);
 }
 
-#side_bar > .container-fluid {
+#side_bar > .side_bar_background {
   background-image: url("./img/sidebar-bg.png");
 }
 
@@ -106,6 +106,14 @@
   display: inline-block;
   width: 1.5rem;
   height: 1.5rem;
+}
+
+#side_bar .side_bar_option {
+  width: 100%;
+}
+
+#side_bar .side_bar_option:hover {
+  background-color: rgba(128, 128, 128, 0.773);
 }
 
 /* * main_content */
