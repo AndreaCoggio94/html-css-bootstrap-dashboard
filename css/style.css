@@ -27,13 +27,16 @@
   --side-bar-primary: #051e34;
   --side-bar-secondary: #11283e;
   --header-primary: #1b72e8;
-  --header-secondary: #2e6fc9;
+  --header-secondary: #15396b;
   --navbar-white: #e7e9ec;
 
   /* layout */
   --navbar: 80px;
   --small-side-bar: 60px;
   --big-side-bar: 120px;
+
+  /* bootstrap */
+  --bs-breadcrumb-divider: ">>";
 }
 
 /* ** reset */
@@ -111,6 +114,14 @@
 
 #header {
   background-color: var(--header-primary);
+  color: var(--white);
+}
+
+#header .badge {
+  background-color: var(--header-secondary);
+}
+
+#header .breadcrumb-item + .breadcrumb-item::before {
   color: var(--white);
 }
 
