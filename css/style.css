@@ -109,10 +109,22 @@
 
 /* header */
 
+#header {
+  background-color: var(--header-primary);
+  color: var(--white);
+}
+
 /* content */
 
 #content {
   /* height: 100%; */
+}
+
+/* * offcanvas right */
+
+.offcanvas.offcanvas-end {
+  /* width: 100vh; */
+  border-left: 0;
 }
 
 /* ** breakpoint */

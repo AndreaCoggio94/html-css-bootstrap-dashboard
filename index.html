@@ -40,7 +40,7 @@
   <body class="debug">
     <header>
       <!-- navbar -->
-      <nav id="navbar" class="navbar navbar-expand-lg bg-light">
+      <nav id="navbar" class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <div class="navbar_content d-flex">
             <a class="navbar-brand d-lg-none" href="#">
@@ -128,9 +128,19 @@
         <div class="container-fluid">
           <div class="row flex-wrap">
             <!-- header -->
-            <header id="header" class="bg-light col-12 small"></header>
+            <header id="header" class="col-12 small">
+              <button
+                class="btn btn-primary"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"
+              >
+                +
+              </button>
+            </header>
             <!-- content -->
-            <section id="content" class="bg-primary col-12">
+            <section id="content" class="bg-light col-12">
               <div class="container-fluid">
                 <div class="row py-4 g-3">
                   <div class="col-12 col-lg-8 bg-secondary tall"></div>
@@ -141,6 +151,26 @@
           </div>
         </div>
       </section>
+      <!-- offcanvas right -->
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasRightLabel">
+            Inserisci un nuovo studente
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">tanta roba</div>
+      </div>
     </main>
   </body>
 </html>
