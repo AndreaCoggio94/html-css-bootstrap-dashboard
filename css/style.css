@@ -188,6 +188,7 @@
 /* * offcanvas right */
 
 .offcanvas.offcanvas-end {
+  width: 100vw;
   border-left: 0;
 }
 
@@ -198,9 +199,17 @@
 /* ** breakpoint */
 
 @media screen and (min-width: 576px) {
+  /* * offcanvas right */
+  .offcanvas.offcanvas-end {
+    width: 80%;
+  }
 }
 
 @media screen and (min-width: 768px) {
+  /* * offcanvas right */
+  .offcanvas.offcanvas-end {
+    width: 60%;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -214,6 +223,10 @@
   #main > .main_content {
     width: calc(100% - var(--big-side-bar));
     overflow-y: auto;
+  }
+  /* * offcanvas right */
+  .offcanvas.offcanvas-end {
+    width: 40%;
   }
 }
 
