@@ -102,7 +102,8 @@
   color: var(--white);
 }
 
-/* ! mi aggiunge il background nell'inspector ma non qui */
+/* ! mi aggiunge il background nell'inspector ma non qui 
+! a quanto pare per il punto davanti allo slash */
 #side_bar > .side_bar_background {
   background-image: url("/img/sidebar-bg.png");
 }
