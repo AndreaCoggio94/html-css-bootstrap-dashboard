@@ -104,7 +104,7 @@
 
 /* ! mi aggiunge il background nell'inspector ma non qui */
 #side_bar > .side_bar_background {
-  background-image: url("./img/sidebar-bg.png");
+  background-image: url("/img/sidebar-bg.png");
 }
 
 #side_bar i {
