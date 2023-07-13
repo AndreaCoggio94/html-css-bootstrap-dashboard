@@ -94,6 +94,12 @@
   color: var(--white);
 }
 
+#side_bar i {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
 /* * main_content */
 
 #main > .main_content {
