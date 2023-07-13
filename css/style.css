@@ -29,6 +29,7 @@
   --header-primary: #1b72e8;
   --header-secondary: #15396b;
   --navbar-white: #e7e9ec;
+  --table-button-background: #f48272;
 
   /* layout */
   --navbar: 80px;
@@ -36,7 +37,7 @@
   --big-side-bar: 120px;
 
   /* bootstrap */
-  --bs-breadcrumb-divider: ">>";
+  /* --bs-breadcrumb-divider: ">>"; */
 }
 
 /* ** reset */
@@ -97,6 +98,10 @@
   color: var(--white);
 }
 
+#side_bar > .container-fluid {
+  background-image: url("./img/sidebar-bg.png");
+}
+
 #side_bar i {
   display: inline-block;
   width: 1.5rem;
@@ -137,8 +142,43 @@
 
 /* content */
 
-#content {
-  /* height: 100%; */
+/* first column */
+
+/* first card */
+
+/* table */
+
+#content .table_rounded {
+  background-color: var(--table-button-background);
+  color: var(--white);
+  height: 2rem;
+  aspect-ratio: 1 / 1;
+  display: inline-block;
+
+  border-radius: 50%;
+  position: relative;
+}
+
+/* second card */
+
+#content .btn.btn_collapse {
+  width: 100%;
+  border-bottom: 2px solid var(--gray);
+  border-radius: 0;
+}
+
+/* second column */
+
+/* first card */
+
+#content .custom_checkbox {
+  border: 1px solid rgba(0, 0, 0, 0.175);
+  border-radius: 0.375rem;
+}
+
+#content .form-check .form-check-input {
+  margin-left: 0;
+  margin-right: 0.5rem;
 }
 
 /* * offcanvas right */
