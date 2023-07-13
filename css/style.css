@@ -174,8 +174,11 @@
 /* * offcanvas right */
 
 .offcanvas.offcanvas-end {
-  /* width: 100vh; */
   border-left: 0;
+}
+
+#offcanvasRight .btn_custom_form_button {
+  width: 100%;
 }
 
 /* ** breakpoint */
