@@ -31,9 +31,9 @@
   --navbar-white: #e7e9ec;
 
   /* layout */
-  --navbar: 12vh;
-  --small-side-bar: 80px;
-  --big-side-bar: 150px;
+  --navbar: 80px;
+  --small-side-bar: 60px;
+  --big-side-bar: 120px;
 }
 
 /* ** reset */
@@ -91,6 +91,7 @@
   width: var(--small-side-bar);
   background-image: url("./img/sidebar-bg.png");
   background-color: var(--side-bar-primary);
+  color: var(--white);
 }
 
 /* * main_content */
