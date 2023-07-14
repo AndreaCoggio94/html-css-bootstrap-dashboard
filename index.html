@@ -700,7 +700,11 @@
         </div>
         <div class="offcanvas-body">
           <!-- offcanvas form -->
-          <form class="offcanvas_form d-flex flex-wrap g-3">
+          <form
+            class="offcanvas_form d-flex flex-wrap g-3"
+            action="http://learning.tizianonicolai.com/request-catcher/"
+            method="post"
+          >
             <!-- nome -->
             <div class="col-12 col-lg-6">
               <label for="nome" class="form-label">Nome</label>
@@ -793,12 +797,11 @@
             </div>
             <!-- state -->
             <div class="col-8 col-lg-4">
-              <label for="password-address-email" class="form-label"
-                >Stato</label
-              >
+              <label for="state" class="form-label">Stato</label>
               <div class="input-group">
                 <button
                   class="btn btn_custom_form_button btn-outline-secondary dropdown-toggle"
+                  id="state"
                   type="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
@@ -862,8 +865,8 @@
             </div>
             <!-- buttons -->
             <div class="col-12 mt-2">
-              <button class="btn btn-primary">Salva</button>
-              <button class="btn btn-warning">Svuota</button>
+              <button class="btn btn-primary" type="submit">Salva</button>
+              <button class="btn btn-warning" type="reset">Svuota</button>
             </div>
           </form>
         </div>
